@@ -19,12 +19,14 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        working-directory: wovenspaces/src
         run: npm install
 
       - name: Generate static site
+        working-directory: wovenspaces/src
         run: npm run generate
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          folder: dist
+          folder: wovenspaces/src/dist

@@ -1,6 +1,21 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@tailwind utilities;
+
+@layer base {
+  @theme {
+    --color-primary: #4F46E5;
+    --color-primary-light: #6366F1;
+    --color-secondary: #A78B6F;
+    --color-text: #111827;
+    --color-muted: #6B7280;
+    --color-accent: #F97372;
+    --color-bg-light: #F9FAFB;
+    --color-bg-dark: #F5F5F4;
+  }
+}
+
 body {
   @apply bg-gray-50 text-gray-900;
 }

@@ -1,12 +1,12 @@
 <template>
-  <UContainer class="py-24 max-w-7xl mx-auto px-6 md:px-12 font-sans text-wovenText bg-wovenBgLight">
+  <UContainer class="py-24 max-w-7xl mx-auto px-6 md:px-12 font-sans text-text bg-bgLight">
     <div class="grid md:grid-cols-2 gap-16 items-start">
       <!-- Left side: Heading + description -->
       <div class="max-w-lg">
-        <h1 class="text-5xl font-serif font-bold mb-6 leading-tight text-wovenPrimary">
+        <h1 class="text-5xl font-serif font-bold mb-6 leading-tight text-primary">
           Get in touch with us
         </h1>
-        <p class="text-lg text-wovenMuted leading-relaxed">
+        <p class="text-lg text-muted leading-relaxed">
           Whether you’re ready to start a project or just want to say hello, we’re here to listen.
         </p>
       </div>
@@ -20,8 +20,8 @@
                 v-model="form.name"
                 :id="id"
                 placeholder="Your full name"
-                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
-                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition"
+                class="bg-transparent border-b-0 border-transparent focus:border-b-2 focus:border-primary
+                  text-text placeholder-muted px-0 py-2 focus:outline-none transition"
               />
             </template>
           </UFormField>
@@ -33,8 +33,8 @@
                 type="email"
                 :id="id"
                 placeholder="you@example.com"
-                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
-                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition"
+                class="bg-transparent border-b-0 border-transparent focus:border-b-2 focus:border-primary
+                  text-text placeholder-muted px-0 py-2 focus:outline-none transition"
               />
             </template>
           </UFormField>
@@ -44,15 +44,18 @@
               <UTextarea
                 v-model="form.message"
                 :id="id"
-                rows="6"
+                :rows="6"
                 placeholder="Write your message here..."
-                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
-                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition resize-y"
+                class="bg-transparent border-b-0 border-transparent focus:border-b-2 focus:border-primary
+                  text-text placeholder-muted px-0 py-2 focus:outline-none transition resize-y"
               />
             </template>
           </UFormField>
 
-          <UButton type="submit" class="w-full py-4 text-lg font-semibold tracking-wide bg-wovenPrimary hover:bg-wovenPrimaryLight text-white rounded-md">
+          <UButton
+            type="submit"
+            class="w-full py-4 text-lg font-semibold tracking-wide bg-primary hover:bg-primaryLight text-white rounded-md"
+          >
             Send Message
           </UButton>
         </UForm>

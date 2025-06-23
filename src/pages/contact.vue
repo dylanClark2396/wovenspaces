@@ -1,86 +1,79 @@
 <template>
-  <UContainer class="py-16 font-sans">
-    <div class="flex justify-center">
-      <UCard class="w-full max-w-xl p-6 sm:p-10 shadow-xl rounded-3xl bg-white/90 backdrop-blur">
-        <template #header>
-          <div class="text-center">
-            <h1 class="text-3xl font-semibold text-gray-800">Let's Connect</h1>
-            <p class="mt-2 text-gray-600 text-base">
-              We'd love to hear about your project. Fill out the form and we'll be in touch!
-            </p>
-          </div>
-        </template>
+  <UContainer class="py-24 max-w-7xl mx-auto px-6 md:px-12 font-sans text-wovenText bg-wovenBgLight">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Left side: Heading + description -->
+      <div class="max-w-lg">
+        <h1 class="text-5xl font-serif font-bold mb-6 leading-tight text-wovenPrimary">
+          Get in touch with us
+        </h1>
+        <p class="text-lg text-wovenMuted leading-relaxed">
+          Whether you’re ready to start a project or just want to say hello, we’re here to listen.
+        </p>
+      </div>
 
-        <form @submit.prevent="submitForm" class="space-y-6 mt-4">
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1" for="name">What is your name?*</label>
-            <UInput id="name" v-model="form.name" placeholder="Jane Doe" required />
-          </div>
+      <!-- Right side: Form -->
+      <div>
+        <UForm :state="form" @submit="submitForm" class="bg-white rounded-lg shadow-lg p-10 space-y-8">
+          <UFormField label="Name" name="name" required>
+            <template #default="{ id }">
+              <UInput
+                v-model="form.name"
+                :id="id"
+                placeholder="Your full name"
+                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition"
+              />
+            </template>
+          </UFormField>
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1" for="email">What is your email address?*</label>
-            <UInput id="email" v-model="form.email" type="email" placeholder="you@example.com" required />
-          </div>
+          <UFormField label="Email" name="email" required>
+            <template #default="{ id }">
+              <UInput
+                v-model="form.email"
+                type="email"
+                :id="id"
+                placeholder="you@example.com"
+                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition"
+              />
+            </template>
+          </UFormField>
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1" for="phone">What is your phone number?</label>
-            <UInput id="phone" v-model="form.phone" type="tel" placeholder="(123) 456‑7890" />
-          </div>
+          <UFormField label="Message" name="message" required>
+            <template #default="{ id }">
+              <UTextarea
+                v-model="form.message"
+                :id="id"
+                rows="6"
+                placeholder="Write your message here..."
+                class="bg-gray-50 border border-gray-300 text-wovenText placeholder-gray-400 rounded-md px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-wovenPrimary focus:border-wovenPrimary transition resize-y"
+              />
+            </template>
+          </UFormField>
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1" for="location">Where is your project located?*</label>
-            <UInput id="location" v-model="form.location" placeholder="City, state or full address" required />
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1" for="goals">Tell us about your project goals in a snapshot.*</label>
-            <UTextarea
-              id="goals"
-              v-model="form.goals"
-              :rows="5"
-              placeholder="E.g. a warm modern kitchen renovation with lots of natural light."
-              required
-            />
-          </div>
-
-          <div class="text-center pt-4">
-            <UButton
-              type="submit"
-              color="primary"
-              size="lg"
-              :loading="isSubmitting"
-              class="rounded-full px-6 flex items-center justify-center gap-2 mx-auto"
-            >
-              Submit Request
-              <Icon name="mdi:send" class="w-5 h-5" />
-            </UButton>
-          </div>
-        </form>
-      </UCard>
+          <UButton type="submit" class="w-full py-4 text-lg font-semibold tracking-wide bg-wovenPrimary hover:bg-wovenPrimaryLight text-white rounded-md">
+            Send Message
+          </UButton>
+        </UForm>
+      </div>
     </div>
   </UContainer>
 </template>
 
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 
 const form = reactive({
   name: '',
   email: '',
-  phone: '',
-  location: '',
-  goals: '',
+  message: ''
 })
 
-const isSubmitting = ref(false)
-
 function submitForm() {
-  isSubmitting.value = true
-  setTimeout(() => {
-    console.log('Form submitted:', { ...form })
-    alert('Thanks! We’ve received your request and will follow up shortly.')
-    isSubmitting.value = false
-    Object.keys(form).forEach((key) => (form[key] = ''))
-  }, 1000)
+  alert(`Thanks for reaching out, ${form.name}! We'll be in touch soon.`)
+  form.name = ''
+  form.email = ''
+  form.message = ''
 }
 </script>

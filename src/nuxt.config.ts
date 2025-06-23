@@ -2,15 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/ui','@nuxt/fonts', '@nuxt/icon'],
   css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/ui','@nuxt/fonts', '@nuxt/icon'],
   components: true,
   fonts: {
     families: [
-      {
-        name: 'DM Sans',
-        weights: ['400', '500', '700']
-      }
+      { name: 'Inter', provider: 'google' },
+      { name: 'Lora', provider: 'google' }
     ]
   },
   ssr: false,
@@ -20,4 +18,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/wovenspaces/',
   },
+  colorMode: {
+    preference: 'light'
+  }
 })

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-bg-light text-text font-sans">
+  <div class="bg-bg-light text-text font-ui-sans">
     <UContainer class="pt-24 max-w-4xl mx-auto px-6 md:px-12">
       <header class="mb-16 text-center">
-        <h1 class="text-5xl font-serif font-bold text-primary mb-4">
+        <h1 class="text-5xl font-ui-serif font-bold text-primary mb-4">
           Dope Designing
         </h1>
         <p class="text-muted text-lg max-w-2xl mx-auto">
@@ -44,7 +44,7 @@
       </div>
 
       <div class="py-20 text-center">
-        <h2 class="text-3xl font-serif font-bold mb-4 text-primary">
+        <h2 class="text-3xl font-ui-serif font-bold mb-4 text-primary">
           Ready to design your space?
         </h2>
         <UButton

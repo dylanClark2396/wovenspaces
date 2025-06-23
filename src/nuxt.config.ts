@@ -5,12 +5,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   components: true,
   modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/icon'],
-  fonts: {
-    families: [
-      { name: 'Inter', provider: 'google' },
-      { name: 'Lora', provider: 'google' }
-    ]
-  },
   ssr: false,
   nitro: {
     preset: 'static'

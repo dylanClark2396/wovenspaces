@@ -6,8 +6,7 @@
         Your Space, Thoughtfully Designed
       </h1>
       <p class="text-lg text-muted max-w-2xl mx-auto mb-8">
-        At Woven, we help you create interiors that balance beauty and functionality. We tailor each space to reflect
-        your lifestyle and values.
+        At Woven, ut id est arcu. Nunc nec libero augue. Mauris cursus sem at mi feugiat, vitae bibendum dui elementum.
       </p>
       <UButton to="/contact" class="bg-primary text-secondary text-base font-medium px-6 py-3 rounded-md">
         Work With Us
@@ -19,11 +18,12 @@
       <img src="/images/living-room.jpg" alt="Modern Living Room" class="rounded-xl shadow-md" />
       <div>
         <h2 class="text-3xl font-ui-serif font-semibold mb-4 text-primary">
-          Intentional Interiors
+          Lorem ipsum
         </h2>
         <p class="text-muted text-lg mb-6">
-          We believe a well-designed space can transform the way you live and feel. Our process starts with
-          understanding how you move through your day and how your space can support it.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id est arcu. Nunc nec libero augue. Mauris cursus
+          sem at mi feugiat, vitae bibendum dui elementum. Vestibulum fringilla pharetra finibus. Curabitur leo nulla,
+          ornare at dignissim sit amet, sagittis interdum diam.
         </p>
         <UButton to="/contact" variant="ghost" class="text-primary hover:underline hover:bg-transparent">
           Learn More
@@ -40,26 +40,35 @@
       <div class="grid gap-8 md:grid-cols-3">
         <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
           <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
-            Space Planning
+            Lorem ipsum
           </h3>
           <p class="text-muted">
-            Layouts that maximize flow, light, and function — tailored to your daily life.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id est arcu. Nunc nec libero augue. Mauris
+            cursus
+            sem at mi feugiat, vitae bibendum dui elementum. Vestibulum fringilla pharetra finibus. Curabitur leo nulla,
+            ornare at dignissim sit amet, sagittis interdum diam.
           </p>
         </div>
         <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
           <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
-            Interior Styling
+            Lorem ipsum
           </h3>
           <p class="text-muted">
-            Define your style through color, furniture, and finishes.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id est arcu. Nunc nec libero augue. Mauris
+            cursus
+            sem at mi feugiat, vitae bibendum dui elementum. Vestibulum fringilla pharetra finibus. Curabitur leo nulla,
+            ornare at dignissim sit amet, sagittis interdum diam.
           </p>
         </div>
         <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
           <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
-            Move-in Services
+            Lorem ipsum
           </h3>
           <p class="text-muted">
-            Thoughtful setups that feel like home on day one.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id est arcu. Nunc nec libero augue. Mauris
+            cursus
+            sem at mi feugiat, vitae bibendum dui elementum. Vestibulum fringilla pharetra finibus. Curabitur leo nulla,
+            ornare at dignissim sit amet, sagittis interdum diam.
           </p>
         </div>
       </div>

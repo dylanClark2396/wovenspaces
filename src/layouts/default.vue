@@ -7,6 +7,9 @@
           <NuxtLink to="/portfolio" class="text-muted hover:text-primary font-medium transition-colors">
             Portfolio
           </NuxtLink>
+          <NuxtLink to="/portfolio3column" class="text-muted hover:text-primary font-medium transition-colors">
+            Portfolio 3 Column
+          </NuxtLink>
           <NuxtLink to="/contact" class="text-muted hover:text-primary font-medium transition-colors">
             Book a Consult
           </NuxtLink>

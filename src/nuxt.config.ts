@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/ui','@nuxt/fonts', '@nuxt/icon'],
   components: true,
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/icon'],
   ssr: false,
   nitro: {
     preset: 'static'

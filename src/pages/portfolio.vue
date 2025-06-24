@@ -3,7 +3,7 @@
     <UContainer class="pt-24 max-w-4xl mx-auto px-6 md:px-12">
       <header class="mb-16 text-center">
         <h1 class="text-5xl font-ui-serif font-bold text-primary mb-4">
-          Dope Designing
+          Our Weave
         </h1>
         <p class="text-muted text-lg max-w-2xl mx-auto">
           A layered, light-filled interior for a young couple settling into their first home together.
@@ -49,7 +49,7 @@
         </h2>
         <UButton
           to="/contact"
-          class="bg-primary hover:bg-primary-light text-white font-semibold px-6 py-3 rounded-md"
+          class="bg-primary text-secondary font-semibold px-6 py-3 rounded-md"
         >
           Work With Us
         </UButton>

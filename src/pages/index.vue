@@ -9,7 +9,7 @@
         At Woven, we help you create interiors that balance beauty and functionality. We tailor each space to reflect
         your lifestyle and values.
       </p>
-      <UButton to="/contact" class="bg-primary hover:bg-primaryLight text-white text-base font-medium px-6 py-3 rounded-md">
+      <UButton to="/contact" class="bg-primary text-secondary text-base font-medium px-6 py-3 rounded-md">
         Work With Us
       </UButton>
     </UContainer>
@@ -18,7 +18,7 @@
     <UContainer class="py-20 grid md:grid-cols-2 gap-12 items-center">
       <img src="/images/living-room.jpg" alt="Modern Living Room" class="rounded-xl shadow-md" />
       <div>
-        <h2 class="text-3xl font-ui-serif font-semibold mb-4 text-secondary">
+        <h2 class="text-3xl font-ui-serif font-semibold mb-4 text-primary">
           Intentional Interiors
         </h2>
         <p class="text-muted text-lg mb-6">
@@ -38,24 +38,24 @@
       </div>
 
       <div class="grid gap-8 md:grid-cols-3">
-        <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
-          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-secondary">
+        <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
+          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
             Space Planning
           </h3>
           <p class="text-muted">
             Layouts that maximize flow, light, and function — tailored to your daily life.
           </p>
         </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
-          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-secondary">
+        <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
+          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
             Interior Styling
           </h3>
           <p class="text-muted">
             Define your style through color, furniture, and finishes.
           </p>
         </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
-          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-secondary">
+        <div class="bg-secondary border border-gray-200 rounded-xl p-6 text-center shadow-sm">
+          <h3 class="text-xl font-ui-serif font-semibold mb-2 text-primary">
             Move-in Services
           </h3>
           <p class="text-muted">
@@ -71,9 +71,9 @@
         Ready to Transform Your Space?
       </h2>
       <p class="text-lg text-muted mb-6">
-        We’d love to hear your vision and help bring it to life.
+        We'd love to hear your vision and help bring it to life.
       </p>
-      <UButton to="/contact" class="bg-primary hover:bg-primaryLight text-base text-white font-medium px-6 py-3 rounded-md">
+      <UButton to="/contact" class="bg-primary text-base text-secondary font-medium px-6 py-3 rounded-md">
         Let's Talk
       </UButton>
     </UContainer>

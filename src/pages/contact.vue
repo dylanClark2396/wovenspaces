@@ -37,7 +37,7 @@
           </UFormField>
 
           <UButton type="submit"
-            class="py-4 text-lg font-semibold tracking-wide bg-primary hover:bg-primaryLight text-white rounded-md">
+            class="py-4 text-lg font-semibold tracking-wide bg-primary text-secondary rounded-md">
             Send Message
           </UButton>
         </UForm>

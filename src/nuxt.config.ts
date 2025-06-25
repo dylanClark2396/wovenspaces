@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: '/wovenspaces/',
+    head: {
+      title: 'Woven'
+    }
   },
   colorMode: {
     preference: 'dark'

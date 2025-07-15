@@ -7,7 +7,14 @@ export default defineNuxtConfig({
   components: true,
   ssr: false,
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/portfolio/living-room',
+        '/portfolio/kitchen-remodel'
+      ]
+    }
   },
   app: {
     baseURL: '/wovenspaces/',
@@ -16,6 +23,6 @@ export default defineNuxtConfig({
     }
   },
   colorMode: {
-    preference: 'dark'
+    preference: 'light'
   }
 })

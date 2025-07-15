@@ -6,11 +6,11 @@
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-6 font-ui-sans">
+          <NuxtLink to="/about" class="text-muted hover:text-primary font-medium transition-colors">
+            About
+          </NuxtLink>
           <NuxtLink to="/portfolio" class="text-muted hover:text-primary font-medium transition-colors">
             Portfolio
-          </NuxtLink>
-          <NuxtLink to="/portfolio3column" class="text-muted hover:text-primary font-medium transition-colors">
-            Portfolio 3 Column
           </NuxtLink>
           <NuxtLink to="/contact" class="text-muted hover:text-primary font-medium transition-colors">
             Book a Consult

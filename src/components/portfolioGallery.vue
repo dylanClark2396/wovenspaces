@@ -28,7 +28,7 @@
       ✕
     </button>
 
-    <div class="grid md:grid-cols-2 gap-4 p-6">
+    <div class="grid grid-cols-2 gap-4 p-6">
       <img
         :src="modalImageBefore"
         alt="Before"
@@ -68,8 +68,8 @@ const toggleImage = (index: number) => {
 
 // Modal logic
 const isModalOpen = ref(false)
-const modalImageBefore = ref<string | null>('')
-const modalImageAfter = ref<string | null>('')
+const modalImageBefore = ref<string | undefined>(undefined)
+const modalImageAfter = ref<string | undefined>(undefined)
 
 const openModal = (before: string, after: string) => {
   modalImageBefore.value = before
@@ -80,7 +80,7 @@ const openModal = (before: string, after: string) => {
 
 const closeModal = () => {
   isModalOpen.value = false
-  modalImageBefore.value = null
-  modalImageAfter.value = null
+  modalImageBefore.value = undefined
+  modalImageAfter.value = undefined
 }
 </script>

@@ -30,12 +30,12 @@
 
     <div class="grid grid-cols-2 gap-4 p-6">
       <img
-        :src="modalImageBefore"
+        :src="`${base}${modalImageBefore}`"
         alt="Before"
         class="w-full h-92 object-cover rounded-xl shadow-md"
       />
       <img
-        :src="modalImageAfter"
+        :src="`${base}${modalImageAfter}`"
         alt="After"
         class="w-full h-92 object-cover rounded-xl shadow-md"
       />
@@ -58,6 +58,8 @@ defineProps<{
     after: string
   }[]
 }>()
+
+const base = useRuntimeConfig().app.baseURL
 
 // Track the flipped state per image pair
 const flipped = ref<boolean[]>([])

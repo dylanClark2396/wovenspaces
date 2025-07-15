@@ -2,7 +2,7 @@
   <div class="grid md:grid-cols-2 gap-4 space-y-8 p-6">
     <div v-for="(pair, index) in pairs" :key="index" class="space-y-4">
       <div class="relative cursor-pointer" @click="toggleImage(index)">
-        <img :src="flipped[index] ? pair.after : pair.before" :alt="flipped[index] ? 'After' : 'Before'"
+        <img :src="`${base}${flipped[index]}` ? pair.after : pair.before" :alt="flipped[index] ? 'After' : 'Before'"
           class="w-full h-92 rounded-xl object-cover shadow-md transition-transform duration-300 hover:scale-105" />
 
         <button class="absolute top-2 right-2 bg-white/80 hover:bg-white text-black px-3 py-1 rounded shadow-md text-xs"
@@ -10,7 +10,6 @@
           More Details
         </button>
       </div>
-
     </div>
   </div>
 

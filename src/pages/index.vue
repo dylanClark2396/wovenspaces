@@ -15,7 +15,7 @@
 
     <!-- Image + Text Section -->
     <UContainer class="py-20 grid md:grid-cols-2 gap-12 items-center">
-      <img :src="`${base}/images/living-room.jpg`" alt="Modern Living Room" class="rounded-xl shadow-md" />
+      <img :src="`${base}images/living-room.jpg`" alt="Modern Living Room" class="rounded-xl shadow-md" />
       <div>
         <h2 class="text-3xl font-ui-serif font-semibold mb-4 text-primary">
           Lorem ipsum

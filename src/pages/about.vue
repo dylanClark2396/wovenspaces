@@ -35,7 +35,7 @@ useHead({
           <Icon name="mdi:rocket-launch-outline" class="text-accent w-7 h-7" /> Our Process
         </h2>
         <p class="text-base leading-relaxed text-muted">
-          From research to launch, we collaborate closely with clients — refining strategy and design every step of the way.
+          From research to launch, we collaborate closely with clients — refining strategy and design every step of the way. Force Push
         </p>
       </div>
 
